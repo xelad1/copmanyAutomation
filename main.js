@@ -39,38 +39,39 @@ var serviceVariables = [name, descriptionTitle, metatext,
 
 //Company Functionality
 
-var navigateToCompany = function () {
+// var navigateToCompany = function () {
   
-  return $('a[href="/ss-mod/company"]').click();
-}
+//   $('a[href="/ss-mod/company"]').click();
+// }
 
-var clickToAddCompany = function () {
+// var clickToAddCompany = function () {
   
-  return $('a[href="/ss-mod/company/new"]').click();
-}
+//   $('a[href="/ss-mod/company/new"]').click();
+// }
 
-var fillInCompanyData = function () {
+// var fillInCompanyData = function () {
 
-  for (var i = 0; i < companyIDs.length; i ++) {
-    $(companyIDs[i]).val(companyVariables[i]);
-  }
+//   for (var i = 0; i < companyIDs.length; i ++) {
+//     $(companyIDs[i]).val(companyVariables[i]);
+//   }
 
-  return $('#new_company > div.form-group.form-actions > div > button').click();
-}
+//   $('#new_company > div.form-group.form-actions > div > button').click();
+// }
 
-navigateToCompany();
-setTimeout(clickToAddCompany, 3000);
-setTimeout(fillInCompanyData, 6000);
+// navigateToCompany();
+// setTimeout(clickToAddCompany, 3000);
+// setTimeout(fillInCompanyData, 6000);
 
 //Service Functionality
 
 var navigateToService = function () {
   
-  $()
+  $('a[href="/ss-mod/service"]').click();
 }
 
-var clickToAddCompany = function () {
-  // body...
+var clickToAddService = function () {
+
+  $('a[href="/ss-mod/service/new"]').click();
 }
 
 var addCompanyService = function () {
@@ -100,12 +101,13 @@ var fillInServiceData = function () {
 
   $('#service_visible').click();
   setTimeout(addCompanyService, 500);
-  setTimeout(fillCompanyService, 1000);
-  setTimeout(saveCompanyService, 1500);
+  setTimeout(fillCompanyService, 1500);
+  setTimeout(saveCompanyService, 3000);
 }
 
-fillInServiceData();
-
+navigateToService();
+setTimeout(clickToAddService, 5000);
+setTimeout(fillInServiceData, 7500);
 
 
 
