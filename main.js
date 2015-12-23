@@ -1,24 +1,24 @@
-var name = 'Hello';
-var imageURL = 'www.something.com';
-var websiteURL = 'www.somethingelse.com';
-var descriptionTitle = 'This is a description';
-var twitter = 'xelad1';
-var slug = 'hello';
-var canonicalURL = '/hello';
-var metatext = 'app that says hello, cloud hello app, cloud goodbye';
-var documentationURL = 'www.documentation.com';
-var description = 'This is an app that keeps all of your hellos in the cloud all the time. Awwwww yeah!';
-var pressURL = 'www.github.com/helloapp';
-var features = 'onehello; twohello; threehello'
-var pricingURL = 'www.this is the price';
-var layer = 'application and data';
-var company = 'Hello Corp';
-var owner = 'xelad1';
-var verified = true;
+var name = 'Colorify.js';
+var imageURL = 'http://img.stackshare.io/service/1150/no-img-open-source.png';
+var websiteURL = 'http://colorify.rocks/';
+var descriptionTitle = 'The simple, customizable, tiny javascript color extractor';
+var twitter = '';
+var slug = 'colorifyjs';
+var canonicalURL = '/colorifyjs';
+var metatext = 'javascript color utility, javascript design tool';
+var documentationURL = 'https://github.com/LukyVj/Colorify.js';
+var description = 'Colorify is a script written in Javascript, that allows you to extract colors from images, and manipulates them. From a simple plain color, based on the dominant color, to a beautiful gradient based on the image edges colors, colorify.js will spice up your designs!';
+var pressURL = 'https://github.com/LukyVj/Colorify.js';
+var features = 'Extract the dominant color from an image';
+var pricingURL = '';
+var toolType = '2';
+var layer = 'Utilities';
+var owner = '';
+var verified = false;
 
 //Collections
 var companyIDs = ['#company_name', '#company_image_url', '#company_website_url',
-                  '#company_description_field', '#company_twitter_username',
+                  '#company_description', '#company_twitter_username',
                   '#company_slug', '#company_canonical_url', '#company_owner'];
 var companyVariables = [name, imageURL, websiteURL,
                         descriptionTitle, twitter, slug,
@@ -33,11 +33,11 @@ var serviceVariables = [name, descriptionTitle, metatext,
                         imageURL, websiteURL, documentationURL,
                         twitter, imageURL, description, 
                         pressURL, features, pricingURL,
-                        slug, company, canonicalURL, 
+                        slug, name, canonicalURL, 
                         layer, owner];
 
 
-//Company Functionality
+// Company Functionality
 
 // var navigateToCompany = function () {
   
@@ -58,11 +58,12 @@ var serviceVariables = [name, descriptionTitle, metatext,
 //   $('#new_company > div.form-group.form-actions > div > button').click();
 // }
 
-// navigateToCompany();
-// setTimeout(clickToAddCompany, 3000);
-// setTimeout(fillInCompanyData, 6000);
+// //Navigate to Company Tab First
 
-//Service Functionality
+// clickToAddCompany();
+// setTimeout(fillInCompanyData, 3000);
+
+// Service Functionality
 
 var navigateToService = function () {
   
@@ -102,11 +103,11 @@ var fillInServiceData = function () {
   $('#service_visible').click();
   setTimeout(addCompanyService, 500);
   setTimeout(fillCompanyService, 1500);
-  setTimeout(saveCompanyService, 3000);
 }
 
-navigateToService();
-setTimeout(clickToAddService, 5000);
+//Navigate to service tab first
+
+clickToAddService()
 setTimeout(fillInServiceData, 7500);
 
 
