@@ -66,27 +66,22 @@ var serviceVariables = [name, descriptionTitle, metatext,
 // Service Functionality
 
 var navigateToService = function () {
-  
   $('a[href="/ss-mod/service"]').click();
 }
 
 var clickToAddService = function () {
-
   $('a[href="/ss-mod/service/new"]').click();
 }
 
 var addCompanyService = function () {
-
   $('#service_functions_service_ids_field > div > a').click();
 }
 
 var fillCompanyService = function () {
-  
   $('#functions_service_function_id_field > div > div > input').click();
 }
 
 var saveCompanyService = function () {
-  
   $('#modal > div > div > div.modal-footer > a.btn.btn-primary.save-action').click();
 }
 
@@ -109,16 +104,3 @@ var fillInServiceData = function () {
 
 clickToAddService()
 setTimeout(fillInServiceData, 7500);
-
-
-
-
-
-
-
-
-
-
-
-
-
